@@ -1,0 +1,68 @@
+///////////// Style du Slider de la section Les personnages 
+
+.slider-perso {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+  
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+    
+    .swiper-slide img {
+      display: block;
+      max-width: 400px;
+      width: 400px;
+      height: 400px;
+    }
+    
+    #characters {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    max-width: 400px;
+    width: 400px;
+    height: 400px;
+  }
+  
+  #characters {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title-left {
+      width: 100%; 
+      padding: 1em 1em;
+      text-align: left;
+      background-position: left;
+  }
+  
+  @media (min-width: 300px) and (max-width: 1000px) {
+    .slider-perso .swiper-slide img {
+      display: block;
+      max-width: 250px;
+      width: 250px;
+      height: 250px;
+  }
+  }
+  
+  
