@@ -39,13 +39,18 @@ get_header();
                   <?php get_template_part('templates-parts/personnages'); ?>
                 </div>
             </article>
-            <article id="place" class="fade-in-section-top">
+            
+            <article id="place" class="fade-in-section fade-in-section-bottom"> 
                 <div>
-                <h3 class="fade-in-title">
-                <span class="word1">Le</span>
-                <span class="word2">Lieu</span>
-            </h3>
-                
+
+                <img id="NuagesBleu" src=<?php echo get_stylesheet_directory_uri() . '/assets/images/Nuages.png'; ?> alt="Nuages Bleu"
+                    data-0="transform:translateX(0px);" 
+                    data-3000="transform:translateX(-300px);">
+                <div>
+                    <h3 class="fade-in-title">
+                        <span class="word1">Le</span>
+                        <span class="word2">Lieu</span>
+                    </h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
                 </div>
 

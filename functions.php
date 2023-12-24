@@ -19,6 +19,7 @@ function theme_enqueue_styles() {
         // Enqueue slider script
         wp_enqueue_script('swiper-slider', get_stylesheet_directory_uri() . '/js/slider.js', array(), '0.1', true);
     
-
+ // Enqueue Animation nuages script 
+ wp_enqueue_script('nuage', get_stylesheet_directory_uri() . '/js/nuages.js');
 }
 
