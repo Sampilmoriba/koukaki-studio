@@ -142,4 +142,76 @@
 .story h2::after,
 .fleur {
   animation: rotating 20s normal linear infinite;
+}
+
+.banner img {
+  margin-top: unset;
+}
+
+.banner {
+  background-image: none;
+}
+.banner .backgroundBanner {
+  position: absolute;
+  width: 100% !important;
+  z-index: -2;
+  margin-top: 0px !important;
+}
+.banner .logoBanner {
+  width: 75%;
+  z-index: 1;
+  position: relative;
+  top: 120px;
+  margin-left: 120px;
+}
+.banner .videoBanner {
+  position: absolute;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 700px) {
+  .videoBanner {
+    display: none;
+  }
+  .backgroundBanner img {
+    margin-bottom: 430px;
+  }
+  .backgroundBanner {
+    margin-bottom: 430px;
+    width: 100%;
+    height: auto;
+  }
+  .boutonMenu {
+    position: absolute;
+    right: -100px;
+    z-index: 10;
+  }
+  .story #place > div p {
+    padding-left: 0.5em;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  #oscar::after {
+    right: -30px;
+  }
+  #oscar::before, #oscar::after {
+    width: 100px;
+    height: 100px;
+  }
+}
+.banner img {
+  width: 100%;
+  margin-top: 0;
+}
+.banner .parallax {
+  width: 50%;
+  margin-top: -10%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 700px) {
+  .banner .parallax {
+    width: 70%;
+    margin-top: -50%;
+  }
 }/*# sourceMappingURL=styles.css.map */

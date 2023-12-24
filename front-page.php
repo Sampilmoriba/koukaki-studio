@@ -4,8 +4,16 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
-        <section class="banner fade-in fade-in-section-top ">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+    <section class="banner fade-in-section fade-in-section-top  fade-in-video ">
+            <!-- video banner -->
+            <video class="videoBanner" autoplay muted loop  poster="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?>">
+                 <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/header-video.mp4'; ?>" type="video/mp4">
+            </video>
+            <!-- image fallback -->
+            <img class="backgroundBanner" src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?> " alt="Background Fleurs d'oranger & chats errants">
+            <div class="parralax">
+                <img src="<?php echo get_template_directory_uri() . "http://studio-koukaki.local/wp-content/themes/foce/foce-child/assets/images/logo-banner.png"; ?>  " class="flottement" alt="logo Fleurs d'oranger & chats errants">
+            </div>  
         </section>
         <section id="#story" class="story fade-in fade-in-section-bottom ">
         <h2 class="fade-in-title">

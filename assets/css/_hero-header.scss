@@ -1,0 +1,68 @@
+// CSS de la banniére
+
+.banner img {
+	margin-top: unset;
+}
+
+.banner {
+    background-image: none;  // désactive l'image qui est appelée dans la classe banner du thème parent
+
+    .backgroundBanner {
+        position: absolute;
+        width: 100% !important;
+        z-index: -2;
+        margin-top: 0px !important;
+    }
+
+    .logoBanner {
+        width: 75%;
+        z-index: 1;
+        position: relative;
+        top: 120px;
+        margin-left: 120px;
+    }
+    
+    .videoBanner {
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .videoBanner {
+        display: none;
+    }
+    
+    .backgroundBanner img {
+        margin-bottom: 430px;
+    }
+    
+    .backgroundBanner {
+        margin-bottom: 430px;
+        width: 100%; 
+        height: auto;
+    }
+
+    .boutonMenu {
+        position: absolute; 
+        right: -100px; 
+        z-index: 10; 
+    }
+
+    .story #place > div p {
+        padding-left: 0.5em;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #oscar::after {
+        right: -30px;
+    }
+
+    #oscar::before, #oscar::after {
+        width: 100px;
+        height: 100px;
+    } 
+}
